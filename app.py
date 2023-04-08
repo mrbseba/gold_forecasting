@@ -32,7 +32,7 @@ def get_gold_data(symbol):
 st.title("Stock Price Forecasting")
 
 # input the stock
-symbol = st.text_input("Enter a stock symbol for Gold (e.g. GOLD):")
+symbol = st.text_input("Enter a stock symbol (e.g. GOLD):")
 
 # create conection for yahoo data
 if not symbol:
