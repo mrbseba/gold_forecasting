@@ -71,8 +71,8 @@ else:
         # fancy chart for the display the open and closed price
         def plot_raw_data():
             fig = go.Figure()
-            fig.add_trace(go.Scatter(x=df.index, y=df['Open'], name="stock_open"))
-            fig.add_trace(go.Scatter(x=df.index, y=df['Close'], name="stock_open"))
+            fig.add_trace(go.Scatter(x=df.index, y=df['Open'], name="Stock Open"))
+            fig.add_trace(go.Scatter(x=df.index, y=df['Close'], name="Stock Close"))
             fig.update_layout(title_text='Stock Price',
                             xaxis_rangeslider_visible=True)
             st.plotly_chart(fig)
